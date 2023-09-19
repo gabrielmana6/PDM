@@ -26,10 +26,6 @@ class Sorteio {
         }
     }
 
-    fun getValor(): Int {
-        return this.valor
-    }
-
     fun getValorMin(): Int {
         return this.valorMin
     }
@@ -37,4 +33,5 @@ class Sorteio {
     fun getValorMax(): Int {
         return this.valorMax
     }
+
 }
