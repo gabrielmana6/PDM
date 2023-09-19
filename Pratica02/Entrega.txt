@@ -1,0 +1,7 @@
+Alterar a "Prática 01" para incluir as telas de resposta (ganhou ou perdeu).
+Anexar APENAS os seguintes arquivos:
+- AndroidManifest;
+- Classe "Jogo";
+- Arquivos de Layout;
+- MainActivity.kt;
+- Fotos de cada tela do App.

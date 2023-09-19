@@ -1,0 +1,5 @@
+Anexar APENAS os seguintes arquivos:
+- AndroidManifest;
+- Classe "Jogo";
+- activity_main.xml;
+- MainActivity.kt.
