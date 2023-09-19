@@ -62,5 +62,6 @@ class MainActivity : AppCompatActivity() {
         //atualiza os valores min e max na view
         this.tvMenorValor.text = sorteio.getValorMin().toString()
         this.tvMaiorValor.text = sorteio.getValorMax().toString()
+        this.tvStatus.text = ""
     }
 }
