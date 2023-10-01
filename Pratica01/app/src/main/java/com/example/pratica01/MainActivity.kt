@@ -3,10 +3,8 @@ package com.example.pratica01
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvMaiorValor: TextView
     private lateinit var tvStatus: TextView
     private lateinit var textInputChute: TextView
-    private lateinit var btnChute: Button
+    private lateinit var btnpalpite: Button
     private lateinit var sorteio: Sorteio
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         this.tvMenorValor = findViewById(R.id.tvMenorValor)
         this.tvStatus = findViewById(R.id.tvStatus)
         this.textInputChute = findViewById(R.id.textInputChute)
-        this.btnChute = findViewById(R.id.btnChute)
+        this.btnpalpite = findViewById(R.id.btnChute)
 
         //realiza o sorteio do valor
         this.sorteio = Sorteio()
@@ -37,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //realiza o chute
-        this.btnChute.setOnClickListener { onClickChute(it) }
+        this.btnpalpite.setOnClickListener { onClickChute(it) }
 
         //realiza outro sorteio
         this.tvStatus.setOnLongClickListener  {

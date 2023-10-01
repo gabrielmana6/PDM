@@ -7,22 +7,29 @@ class Sorteio {
     private var valor: Int
     private var valorMin: Int = 1
     private var valorMax: Int = 100
+    private lateinit var status: String
 
     constructor(){
         this.valor = Random.nextInt(valorMin, valorMax + 1)
     }
 
     fun chute(chute: Int): String{
+        this.status = ""
+        
         if(chute == this.valor) {
-            return "Jogador ganhou"
+            this.status = "ganhou"
+            return this.status
         } else if (chute < valorMin || chute > valorMax) {
-            return "Jogador perdeu"
+            this.status = "perdeu"
+            return this.status
         } else if(chute < valor) {
             this.valorMin = chute
-            return "Continue tentando"
+            this.status = "Continue tentando"
+            return this.status
         } else {
             this.valorMax = chute
-            return "Continue tentando"
+            this.status = "Continue tentando"
+            return this.status
         }
     }
 
